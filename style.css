@@ -218,7 +218,7 @@ h5 {
 
 
 .contacts {
-	
+
 }
 
 .email {
@@ -246,9 +246,9 @@ h5 {
 	display: flex;
 }
 
-.contacts:last-child {
-	margin-bottom: 32px;
-}
+.contacts > *:not(:last-child) {
+	margin-bottom: 5px;
+  }
 
 .contacts__icons {
 	padding: 7px 32px 7px 14px;
@@ -265,13 +265,14 @@ h5 {
 
 
 .languages {
-	padding: 0 18px 32px 18px;
+	padding: 0px 18px 32px 18px;
 	width: 264px;
 	height: 64px;
 	background: rgba(196, 196, 196, 0.35);
 	border-radius: 10px;
 	padding: 6px 165px 6px 16px;
 	margin-bottom: 32px;
+	margin-top: 32px;
 }
 
 .list__languages {
