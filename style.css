@@ -181,10 +181,10 @@ h4 {
 }
 
 h5 {
-font-weight: 700;
-font-size: 10px;
-line-height: 18px;
-color: #E5E5E5;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 18px;
+	color: #E5E5E5;
 }
 
 
@@ -217,33 +217,37 @@ color: #E5E5E5;
 }
 
 
-.contacts {}
+.contacts {
+	
+}
 
 .email {
-	width: 264px;
 	height: 38px;
 	background: rgba(196, 196, 196, 0.35);
 	border-radius: 10px;
-	margin: 0 18px 5px 0;
+	/* margin: 0 18px 5px 0; */
 	display: flex;
 }
 
 .phone-number {
-	width: 264px;
+	display: flex;
 	height: 38px;
 	background: rgba(196, 196, 196, 0.35);
 	border-radius: 10px;
-	margin: 0 18px 5px 0;
-	display: flex;
+	/* margin: 0 18px 5px 0;*/
 }
 
 .location {
-	width: 264px;
+
 	height: 38px;
 	background: rgba(196, 196, 196, 0.35);
 	border-radius: 10px;
-	margin: 0 18px 32px 0;
+	/* margin: 0 18px 32px 0;  */
 	display: flex;
+}
+
+.contacts:last-child {
+	margin-bottom: 32px;
 }
 
 .contacts__icons {
@@ -283,9 +287,7 @@ color: #E5E5E5;
 }
 
 
-.hobbies {
-
-}
+.hobbies {}
 
 .hobbies h4 {
 	width: 90px;
@@ -300,23 +302,14 @@ color: #E5E5E5;
 
 }
 
-.hobbies__all {
-margin: 13px 28px 10px 23px;
+.hobbies__list {
+	margin: 13px 28px 10px 23px;
 }
 
-.reading {
+.hobbies__item {
 	display: inline-block;
-padding: 0 25px 0 0; 
+	padding: 0 25px 0 0;
 }
 
-.dance {
-	display: inline-block;
-	padding: 0 25px 0 0; 
-}
-
-.singing {
-	display: inline-block;
-	padding: 0 25px 0 0; 
-}
 
 /*--------------------------БЛОК 2--------------------------------*/
