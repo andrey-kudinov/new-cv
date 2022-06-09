@@ -150,6 +150,8 @@ main {
 	height: 563px;
 	background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
 	padding: 10px 14px;
+	display: flex;
+
 }
 
 h1 {
@@ -174,6 +176,8 @@ h3 {
 }
 
 h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 18px;
@@ -187,6 +191,14 @@ h5 {
 	color: #E5E5E5;
 }
 
+h6 {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
 
 /*-------------------------------БЛОК 1-----------------------------*/
 
@@ -196,6 +208,7 @@ h5 {
 	background: rgba(196, 196, 196, 0.3);
 	border-radius: 10px;
 	padding: 0px 18px 10px 18px;
+	margin-right: 37px;
 }
 
 .about-me__main {
@@ -217,9 +230,7 @@ h5 {
 }
 
 
-.contacts {
-
-}
+.contacts {}
 
 .email {
 	height: 38px;
@@ -246,9 +257,9 @@ h5 {
 	display: flex;
 }
 
-.contacts > *:not(:last-child) {
+.contacts>*:not(:last-child) {
 	margin-bottom: 5px;
-  }
+}
 
 .contacts__icons {
 	padding: 7px 32px 7px 14px;
@@ -295,12 +306,9 @@ h5 {
 	height: 32px;
 	background: rgba(196, 196, 196, 0.35);
 	border-radius: 10px;
-
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .hobbies__list {
@@ -314,3 +322,83 @@ h5 {
 
 
 /*--------------------------БЛОК 2--------------------------------*/
+
+.second-block {
+	width: 325px;
+	height: 237px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding: 20px 7px 20px 14px;
+	/* margin: 10px 14px 35px 0; */
+}
+
+.why-me {}
+
+.education {
+	margin-bottom: 12px;
+}
+
+/* hr {
+	width: 143px;
+	height: 0px;
+	border: 1px solid #545454;
+	display: flex;
+	justify-content: flex-end;
+} */
+
+h6 {
+	width: 156px;
+	height: 24px;
+	background: #545454;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.degree {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	color: #343434;
+}
+
+.university {
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	color: #343434;
+}
+
+.date {
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 9px;
+	line-height: 18px;
+	color: #73808D;
+}
+
+.skills {
+font-weight: 600;
+font-size: 10px;
+line-height: 18px;
+color: #545454;
+
+}
+
+.skills__list {
+
+}
+
+.skills__item {
+display: inline-block;
+padding: 0 16px 0 0;
+text-align: center;
+}
+
+
+.code {}
