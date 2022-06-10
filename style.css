@@ -338,13 +338,13 @@ h6 {
 	margin-bottom: 12px;
 }
 
-/* hr {
+.line {
 	width: 143px;
-	height: 0px;
 	border: 1px solid #545454;
-	display: flex;
-	justify-content: flex-end;
-} */
+	position: relative;
+	top: 32px;
+	right: 0;
+}
 
 h6 {
 	width: 156px;
@@ -356,6 +356,7 @@ h6 {
 	align-items: center;
 	margin-bottom: 12px;
 }
+
 
 .degree {
 	font-weight: 700;
@@ -383,21 +384,19 @@ h6 {
 }
 
 .skills {
-font-weight: 600;
-font-size: 10px;
-line-height: 18px;
-color: #545454;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 18px;
+	color: #545454;
 
 }
 
-.skills__list {
-
-}
+.skills__list {}
 
 .skills__item {
-display: inline-block;
-padding: 0 16px 0 0;
-text-align: center;
+	display: inline-block;
+	padding: 0 16px 0 0;
+	text-align: center;
 }
 
 
