@@ -32,6 +32,8 @@ aside {
 
 html,
 body {
+	/* height: 100%;
+	width: 100%; */
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -93,6 +95,7 @@ body {
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
+	/*минимальная высота будет 100vh. общепринятое, задавать минимальную высоту экрана, когда контент меньше и прокрутка не подразумевается. на мобилке, если высота ограничена, то прокрутка есть и это сломает прокрутку.*/
 	padding: 2rem 0;
 	background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
 }
@@ -106,10 +109,21 @@ main {
 	border-radius: 10px;
 }
 
-@media screen and (max-width: 700px){
+footer {
+	width: 690px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 14px;
+}
+
+@media screen and (max-width: 700px) {
 	main {
 		width: auto;
 		flex-direction: column;
+	}
+
+	footer {
+		width: auto;
 	}
 }
 
@@ -173,9 +187,10 @@ h6 {
 }
 
 .about-me__image {
+	/* padding: 20px 10px 28px 0px; */
 	margin-right: 10px;
 	width: 110px;
-  height: 110px;
+	height: 110px;
 	flex-shrink: 0;
 }
 
@@ -233,9 +248,9 @@ h6 {
 	color: #FFFFFF;
 }
 
-
 .languages {
 	padding: 0px 18px 32px 18px;
+	/* width: 264px; */
 	height: 64px;
 	background: rgba(196, 196, 196, 0.35);
 	border-radius: 10px;
@@ -255,7 +270,6 @@ h6 {
 	line-height: 18px;
 	color: #FAFAFA;
 }
-
 
 .hobbies {}
 
@@ -278,18 +292,17 @@ h6 {
 	padding: 0 25px 0 0;
 }
 
-
 /*--------------------------БЛОК 2--------------------------------*/
 
 .second-block {
 	height: min-content;
-	background: #FFFFFF;
-	border-radius: 10px;
-	padding: 20px;
 }
 
 .why-me {
 	overflow: hidden;
+	padding: 20px;
+	background: #FFFFFF;
+	border-radius: 10px;
 }
 
 .education {
@@ -314,7 +327,7 @@ h6:after {
 	bottom: 9px;
 	width: 100%;
 	left: 100%;
-	height: 2px;
+	height: 1px;
 	background-color: #545454;
 }
 
@@ -360,4 +373,75 @@ h6:after {
 }
 
 
-.code {}
+.code {
+	overflow: hidden;
+	background: rgba(196, 196, 196, 0.3);
+	border-radius: 10px;
+	margin-top: 33px;
+	padding: 10px;
+}
+
+.code__image {
+	width: 265px;
+	height: 208px;
+	margin-top: 10px;
+	margin-left: 30px;
+	flex-shrink: 0;
+}
+
+.code__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*--------------------------FOOTER--------------------------------*/
+
+
+
+.github {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 18px;
+	color: #E5E5E5;
+
+}
+
+.github a {
+	display: flex;
+	align-items: center;
+}
+
+.github a:visited {
+	color: #E5E5E5;
+}
+
+.github a:hover {
+	color: #A5A5A5;
+}
+
+.github a:active {
+	color: #5F5F5F;
+}
+
+
+
+.github img {
+	margin-right: 12px;
+	width: auto;
+	height: 25px;
+}
+
+.year {
+	margin: auto;
+	margin-right: auto;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 18px;
+	color: #E5E5E5;
+}
+
+.logo {
+	widows: 100%;
+	height: 21px;
+}
