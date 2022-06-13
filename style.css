@@ -90,6 +90,10 @@ h6 {
 
 /*----------------------------------------------------------------------*/
 
+/* html {
+	scroll-behavior: smooth; 
+ } */
+
 body {
 	font-family: "Montserrat";
 	display: grid;
